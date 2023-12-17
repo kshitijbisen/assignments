@@ -11,3 +11,9 @@ There is no automated test for this one, this is more for you to understand time
 function calculateTime(n) {
     return 0.01;
 }
+const beforeDate=new Date();
+const beforeTime=beforeDate.getTime();
+calculateTime(100);
+const AfterDate=new Date();
+const AfterTime=AfterDate.getTime();
+console.log("Time to run function in millisecond is :"+(AfterTime-beforeTime));
